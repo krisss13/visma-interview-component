@@ -1,0 +1,64 @@
+.interviewBlock {
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.visible {
+    height: auto;
+}
+
+.address-block {
+    width: 270px;
+    min-width: 270px;
+    margin: 30px;
+}
+
+.address-block > .btn > .red:before {
+    background-color: var(--red-80);
+}
+
+.dropdown-toggle {
+    min-width: 240px;
+}
+.address-block > button {
+    float: left;
+    margin-bottom: 1rem;
+}
+
+.address-block_container {
+    padding-left: 3rem;
+}
+
+.address-block .input-group {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.address-block .clear-btn {
+    position: absolute;
+    z-index: 3;
+    right: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-address-block {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.save-button {
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+}

@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import AddressBlock from './components/InviteToInterview/AddressBlock';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [addressList, setAddressList] = useState([
+        'Sporta iela 11, Rīga',
+        'Maiduguns iela 2,Rīga',
+        'Lindhagengatan 94, Stockholm'
+    ]);
+    return (
+        <div className="App">
+            <div className="panel">
+                <div className="panel-body">
+                    <AddressBlock addressList={addressList} setAddressList={setAddressList}/>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
